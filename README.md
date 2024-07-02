@@ -296,7 +296,7 @@ Go to `/src/index.html` and put your information, there are 5 sections:
   ...
   <div class="social-links">
     <a href="#!" target="_blank">
-      <i class="fa fa-twitter fa-inverse"></i>
+      <i class="fa fa-medium" ></i>
     </a>
     <a href="#!" target="_blank">
       <i class="fa fa-linkedin fa-inverse"></i>
