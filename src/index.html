@@ -1,14 +1,3 @@
-<!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
-  -
-  Github Repo: https://github.com/cobiwave/simplefolio/
-  Readme: https://github.com/cobiwave/simplefolio/README.md
-  -
-  For business & inquires, contact me -> jacobojavier98@gmail.com
--->
 <!DOCTYPE html>
 <html lang="en" class="sr">
   <head>
@@ -41,6 +30,31 @@
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
+    
+    
+
+       <!-- **** Navigation Bar **** -->
+<nav class="navbar" style="background-color: #02ffc0; padding: 15px; position: fixed; width: 100%; top: 0; z-index: 1000;">
+  <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+    <!-- Brand/Logo -->
+    <a href="#top" class="navbar-brand" style="color: #fff; text-decoration: none; font-size: 24px; font-weight: bold;">[Your Name]</a>
+    
+    <!-- Navigation Links -->
+    <ul class="navbar-links" style="list-style: none; display: flex; gap: 20px; margin: 0;">
+      <li style="display: inline;"><a href="#hero" style="color: #fff; text-decoration: none; padding: 10px; font-size: 18px;">Home</a></li>
+      <li style="display: inline;"><a href="#about" style="color: #fff; text-decoration: none; padding: 10px; font-size: 18px;">About</a></li>
+      <li style="display: inline;"><a href="#projects" style="color: #fff; text-decoration: none; padding: 10px; font-size: 18px;">Projects</a></li>
+      <li style="display: inline;"><a href="#contact" style="color: #fff; text-decoration: none; padding: 10px; font-size: 18px;">Contact</a></li>
+    </ul>
+    <button id="dark-mode-toggle" style="background-color: #61dafb; color: #282c34; padding: 8px 15px; border: none; cursor: pointer;">
+      Dark Mode
+    </button>
+  </div>
+</nav>
+
+<!-- Add padding to avoid content being hidden behind the navbar -->
+<div style="padding-top: 70px;"></div>
+
 
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
@@ -101,6 +115,67 @@
       </div>
     </section>
     <!-- /END About Section -->
+
+     <!-- **** Internship Section **** -->
+     <section id="Internship">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Internships</h2>
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Internship 0</h3>
+                <div>
+                  <p class="mb-4">
+                    Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
+                    complement the information: the skills learned or reinforced in its realization and how you faced it, 
+                    prove to be proactive in the search for solutions.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="#!"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#!"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/project.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          
+    <!-- /END Projects Section -->
 
     <!-- **** Projects Section **** -->
     <section id="projects">
