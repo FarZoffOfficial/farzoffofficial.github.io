@@ -1,0 +1,121 @@
+/* Default Light Mode */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.bg-green {
+  background-color: black;
+}
+
+.navbar {
+  background-color: #0f44b6;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  color: #000000;
+}
+
+#dark-mode-toggle {
+  background-color: #61dafb;
+  color: #282c34;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #282c34;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar {
+  background-color: #1e2a33;
+}
+
+body.dark-mode .footer {
+  background-color: #1e2a33;
+  color: #ffffff;
+}
+
+body.dark-mode #dark-mode-toggle {
+  background-color: #282c34;
+  color: #61dafb;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  transition: color 0.3s ease;
+  color: #000000;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode a {
+  color: #0772b9;
+}
+
+/* Transition Effect */
+body,
+.navbar,
+.footer {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Progress Bar Styles */
+.progress-container {
+  width: 100%;
+  background-color: #000000; /* Light gray background for the progress bar */
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px 0; /* Increased margin to add space above and below the progress bar */
+}
+
+.progress {
+  height: 20px; /* Height of the progress bar */
+  background-color: #61dafb; /* Default color for the filled portion */
+  color: #000000;
+  width: 0; /* Initial width (0% filled) */
+  transition: width 0.4s ease; /* Smooth transition effect for filling */
+}
+
+body.dark-mode .progress {
+  background-color: #4ca7ff; /* Change color for dark mode */
+}
+
+/* Adjusting margin for surrounding sections */
+section {
+  margin: 30px 0; /* Increase space above and below each section */
+}
+/* Internship Section Styles */
+#internships {
+  margin: 30px 0; /* Space above and below the section */
+}
+
+.internship-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack internships vertically */
+}
+
+.internship {
+  background-color: #f8f9fa; /* Light background for the internship block */
+
+  padding: 15px; /* Padding inside the block */
+  margin: 10px 0; /* Space between internship blocks */
+  transition: box-shadow 0.3s; /* Transition for hover effect */
+}
+
+
+
+.internship h3 {
+  margin: 0; /* Remove default margin */
+}
+
+
